@@ -1,0 +1,351 @@
+@startuml
+
+title __QXAPP.APP's Class Diagram__\n
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.ChatAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.HomeAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCollectionPushAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCommunityAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyPushAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.SearchAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.SectionsPagerAdapter {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Bean {
+      class zuke.com.qxapp.Bean.Community {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Bean {
+      class zuke.com.qxapp.Bean.Post {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Bean {
+      class zuke.com.qxapp.Bean.User {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    class zuke.com.qxapp.BuildConfig {
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace DAO {
+      class zuke.com.qxapp.DAO.userDao {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace DAO {
+      class zuke.com.qxapp.DAO.userSQLiteOpenHelper {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Fragment {
+      abstract class zuke.com.qxapp.Fragment.BaseFragment {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Fragment {
+      class zuke.com.qxapp.Fragment.FragmentChat {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Fragment {
+      class zuke.com.qxapp.Fragment.FragmentHome {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Fragment {
+      class zuke.com.qxapp.Fragment.FragmentMine {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Fragment {
+      class zuke.com.qxapp.Fragment.Fragment_Community {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Fragment {
+      class zuke.com.qxapp.Fragment.Fragment_Push {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    class zuke.com.qxapp.MainActivity {
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Util {
+      class zuke.com.qxapp.Util.ClearEditText {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Util {
+      class zuke.com.qxapp.Util.NoScrollViewPager {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Login {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyCollect {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyCommunity {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyInfo {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyPush {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.PushCommunity {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.PushContent {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Receive {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.ReceiveCommunity {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Register {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Search {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Setting {
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Splash {
+      }
+    }
+  }
+  
+
+  zuke.com.qxapp.Adapter.ChatAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.ChatAdapter o-- zuke.com.qxapp.Adapter.ChatAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.HomeAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.HomeAdapter o-- zuke.com.qxapp.Adapter.HomeAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter o-- zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyCollectionPushAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyCollectionPushAdapter o-- zuke.com.qxapp.Adapter.MyCollectionPushAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyCommunityAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyCommunityAdapter o-- zuke.com.qxapp.Adapter.MyCommunityAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyPushAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.SearchAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.SectionsPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+  zuke.com.qxapp.Bean.Community -up-|> cn.bmob.v3.BmobObject
+  zuke.com.qxapp.Bean.Community o-- zuke.com.qxapp.Bean.User : user
+  zuke.com.qxapp.Bean.Post -up-|> cn.bmob.v3.BmobObject
+  zuke.com.qxapp.Bean.Post o-- zuke.com.qxapp.Bean.User : author
+  zuke.com.qxapp.Bean.User -up-|> cn.bmob.v3.BmobUser
+  zuke.com.qxapp.DAO.userDao o-- zuke.com.qxapp.DAO.userSQLiteOpenHelper : helper
+  zuke.com.qxapp.DAO.userSQLiteOpenHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+  zuke.com.qxapp.Fragment.BaseFragment -up-|> androidx.fragment.app.Fragment
+  zuke.com.qxapp.Fragment.FragmentChat -up-|> androidx.fragment.app.Fragment
+  zuke.com.qxapp.Fragment.FragmentChat o-- zuke.com.qxapp.Adapter.ChatAdapter : chatAdapter
+  zuke.com.qxapp.Fragment.FragmentHome -up-|> androidx.fragment.app.Fragment
+  zuke.com.qxapp.Fragment.FragmentHome o-- zuke.com.qxapp.Adapter.HomeAdapter : homeAdapter
+  zuke.com.qxapp.Fragment.FragmentMine -up-|> androidx.fragment.app.Fragment
+  zuke.com.qxapp.Fragment.Fragment_Community -up-|> androidx.fragment.app.Fragment
+  zuke.com.qxapp.Fragment.Fragment_Community o-- zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter : myCollectionCommunityAdapter
+  zuke.com.qxapp.Fragment.Fragment_Push -up-|> androidx.fragment.app.Fragment
+  zuke.com.qxapp.Fragment.Fragment_Push o-- zuke.com.qxapp.Adapter.MyCollectionPushAdapter : myCollectionPushAdapter
+  zuke.com.qxapp.MainActivity .up.|> androidx.viewpager.widget.ViewPager.OnPageChangeListener
+  zuke.com.qxapp.MainActivity .up.|> com.ashokvarma.bottomnavigation.BottomNavigationBar.OnTabSelectedListener
+  zuke.com.qxapp.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.Util.ClearEditText .up.|> android.text.TextWatcher
+  zuke.com.qxapp.Util.ClearEditText .up.|> android.view.View.OnFocusChangeListener
+  zuke.com.qxapp.Util.ClearEditText -up-|> androidx.appcompat.widget.AppCompatEditText
+  zuke.com.qxapp.Util.NoScrollViewPager -up-|> androidx.viewpager.widget.ViewPager
+  zuke.com.qxapp.activity.Login -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyCollect -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyCommunity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyCommunity o-- zuke.com.qxapp.Adapter.MyCommunityAdapter : myCommunityAdapter
+  zuke.com.qxapp.activity.MyInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyPush -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyPush o-- zuke.com.qxapp.Adapter.MyPushAdapter : myPushAdapter
+  zuke.com.qxapp.activity.PushCommunity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.PushContent -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Receive -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.ReceiveCommunity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Register -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Search -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Search o-- zuke.com.qxapp.Adapter.SearchAdapter : searchAdapter
+  zuke.com.qxapp.activity.Setting -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Splash -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

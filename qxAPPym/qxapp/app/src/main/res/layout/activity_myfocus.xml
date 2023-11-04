@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:tint="#000"
+            android:src="@drawable/back"
+            android:id="@+id/back"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="我的关注"
+            android:id="@+id/rec"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/rec_collect"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:tint="#000"-->
+        <!--android:src="@drawable/sc_normal"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp" />-->
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/myfocus_error"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:text="你还没有关注任何人哦！"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:visibility="gone"
+        android:id="@+id/myfocus_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/myfocus_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

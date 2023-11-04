@@ -1,0 +1,284 @@
+@startuml
+
+title __ADAPTER's Class Diagram__\n
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.ChatAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Community>
+          - isfootview : Boolean
+          + ChatAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.ChatAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + comunityInfo : TextView
+          + comunityName : TextView
+          + comunityUser : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.HomeAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Post>
+          - isfootview : Boolean
+          + HomeAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.HomeAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + content : TextView
+          + nickname : TextView
+          + time : TextView
+          + title : TextView
+          + username : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Community>
+          - isfootview : Boolean
+          + MyCollectionCommunityAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + info : TextView
+          + name : TextView
+          + owner : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCollectionPushAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Post>
+          - isfootview : Boolean
+          + MyCollectionPushAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCollectionPushAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + content : TextView
+          + nickname : TextView
+          + time : TextView
+          + title : TextView
+          + username : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCommunityAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Community>
+          - isfootview : Boolean
+          + MyCommunityAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyCommunityAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + communityname : TextView
+          + info : TextView
+          + owner : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyPushAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Post>
+          - isfootview : Boolean
+          + MyPushAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.MyPushAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + content : TextView
+          + nickname : TextView
+          + time : TextView
+          + title : TextView
+          + username : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.SearchAdapter {
+          - F_TYPE : int
+          - Max_num : int
+          - N_TYPE : int
+          - context : Context
+          - data : List<Post>
+          - isfootview : Boolean
+          + SearchAdapter()
+          + getItemCount()
+          + getItemViewType()
+          + onBindViewHolder()
+          + onCreateViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.SearchAdapter.RecyclerViewHolder {
+          + Loading : TextView
+          + search_content : TextView
+          + search_nickname : TextView
+          + search_time : TextView
+          + search_username : TextView
+          + RecyclerViewHolder()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace Adapter {
+      class zuke.com.qxapp.Adapter.SectionsPagerAdapter {
+          - fragments : List<Fragment>
+          + SectionsPagerAdapter()
+          + getCount()
+          + getItem()
+      }
+    }
+  }
+  
+
+  zuke.com.qxapp.Adapter.ChatAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.ChatAdapter o-- zuke.com.qxapp.Adapter.ChatAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.ChatAdapter +-down- zuke.com.qxapp.Adapter.ChatAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.ChatAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.HomeAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.HomeAdapter o-- zuke.com.qxapp.Adapter.HomeAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.HomeAdapter +-down- zuke.com.qxapp.Adapter.HomeAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.HomeAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter o-- zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter +-down- zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.MyCollectionCommunityAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.MyCollectionPushAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyCollectionPushAdapter o-- zuke.com.qxapp.Adapter.MyCollectionPushAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyCollectionPushAdapter +-down- zuke.com.qxapp.Adapter.MyCollectionPushAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.MyCollectionPushAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.MyCommunityAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyCommunityAdapter o-- zuke.com.qxapp.Adapter.MyCommunityAdapter.RecyclerViewHolder : viewHolder
+  zuke.com.qxapp.Adapter.MyCommunityAdapter +-down- zuke.com.qxapp.Adapter.MyCommunityAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.MyCommunityAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.MyPushAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.MyPushAdapter +-down- zuke.com.qxapp.Adapter.MyPushAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.MyPushAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.SearchAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  zuke.com.qxapp.Adapter.SearchAdapter +-down- zuke.com.qxapp.Adapter.SearchAdapter.RecyclerViewHolder
+  zuke.com.qxapp.Adapter.SearchAdapter.RecyclerViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  zuke.com.qxapp.Adapter.SectionsPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

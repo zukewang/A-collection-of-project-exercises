@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="human">
+        <item>all</item>
+        <item>WYZ</item>
+        <item>HangZhou</item>
+        <item>TongLu</item>
+    </string-array>
+</resources>

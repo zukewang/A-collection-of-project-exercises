@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GeoQuize</string>
+    <string name="question1">Is WYZ cool?</string>
+    <string name="question2">Is HangZhou good?</string>
+    <string name="question3">Is TongLu good?</string>
+    <string name="trueBtn">yes</string>
+    <string name="falseBtn">no</string>
+    <string name="backBtn">back</string>
+    <string name="nextBtn">next</string>
+    <string name="successInfo">right</string>
+    <string name="failInfo">wrong</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

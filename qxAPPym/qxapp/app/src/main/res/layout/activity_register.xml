@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:scaleY="0.8"
+            android:scaleX="0.8"
+            android:paddingLeft="10dp"
+            android:tint="#000"
+            android:src="@drawable/back"
+            android:id="@+id/back"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="注册账号"
+            android:id="@+id/rec"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:paddingRight="10dp"
+            android:scaleY="0.6"
+            android:scaleX="0.6"
+            android:id="@+id/reg_menu"
+            android:tint="#000"
+            android:src="@drawable/caidan"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/zhpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.hzh.qxapp.util.ClearEditText
+                android:maxLines="1"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号/邮箱"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/pspic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"/>
+            <ImageView
+                android:tint="#ec6f11"
+                android:id="@+id/lookpass"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/eyeclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/qmpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.hzh.qxapp.util.ClearEditText
+                android:id="@+id/nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入签名"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/xbpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/down"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/choosegender"
+                android:background="@drawable/shape_choosegender"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:text="男"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_choosegender"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"/>
+
+</LinearLayout>

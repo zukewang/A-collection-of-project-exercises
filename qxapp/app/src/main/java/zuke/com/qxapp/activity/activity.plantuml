@@ -1,0 +1,253 @@
+@startuml
+
+title __ACTIVITY's Class Diagram__\n
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Login {
+          - loginBtn : Button
+          - passWord : EditText
+          - registerBtn : Button
+          - userName : EditText
+          # onCreate()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyCollect {
+          - back : ImageView
+          - fragadapter : FragmentStatePagerItemAdapter
+          - smartTabLayout : SmartTabLayout
+          - viewPager : ViewPager
+          # onCreate()
+          - initView()
+          - initab()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyCommunity {
+          ~ data : List<Community>
+          ~ swipeItemClick : OnItemMenuClickListener
+          ~ swipeMenuCreator : SwipeMenuCreator
+          - mycom_back : ImageView
+          - mycom_error : TextView
+          - mycom_swipe : SwipeRefreshLayout
+          - mycomrv : SwipeRecyclerView
+          # onCreate()
+          - Refresh()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyInfo {
+          - back : ImageView
+          - fragadapter : FragmentStatePagerItemAdapter
+          - info_title : TextView
+          - my_comnum : TextView
+          - my_gender : ImageView
+          - my_name : TextView
+          - my_nickname : TextView
+          - my_pushnum : TextView
+          - smartTabLayout : SmartTabLayout
+          - usercreattime : TextView
+          - viewPager : ViewPager
+          # onCreate()
+          - getmyInfo()
+          - initTab()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.MyPush {
+          ~ data : List<Post>
+          ~ swipeItemClick : OnItemMenuClickListener
+          ~ swipeMenuCreator : SwipeMenuCreator
+          - mypush_back : ImageView
+          - mypush_error : TextView
+          - mypush_swipe : SwipeRefreshLayout
+          - mypushrv : SwipeRecyclerView
+          # onCreate()
+          - Refresh()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.PushCommunity {
+          - back : ImageView
+          - communityinfo : TextView
+          - communityname : TextView
+          - pushCommunity : Button
+          # onCreate()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.PushContent {
+          - back : ImageView
+          - push : Button
+          - pushContent : EditText
+          - pushtitle : EditText
+          # onCreate()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Receive {
+          - back : ImageView
+          - content : TextView
+          - focus_or_not : Button
+          - rec_collect : ImageView
+          - time : TextView
+          - title : TextView
+          - touser : CircleImageView
+          - user_onlyid : String
+          - username : TextView
+          # onCreate()
+          - getisrelated()
+          - initData()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.ReceiveCommunity {
+          - rec_commmunityInfo : TextView
+          - rec_commmunityUser : TextView
+          - rec_commmunityname : TextView
+          - rec_communityback : ImageView
+          - rec_communitycollect : ImageView
+          # onCreate()
+          - getInfo()
+          - getisrelated()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Register {
+          - back : ImageView
+          - choosegender : Button
+          - getgril : LinearLayout
+          - getman : LinearLayout
+          - isPswVisible : Boolean
+          - lookpass : ImageView
+          - mychoosegender : String
+          - nickName : EditText
+          - passWord : EditText
+          - reg_fankui : LinearLayout
+          - reg_help : LinearLayout
+          - reg_menu : ImageView
+          - reg_quit : LinearLayout
+          - registerBtn : Button
+          - userName : EditText
+          # onCreate()
+          - getMenu()
+          - initView()
+          - setPswVisible()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Search {
+          - back : ImageView
+          - data : List<Post>
+          - search : ImageView
+          - search_isnone : LinearLayout
+          - search_progress : ProgressBar
+          - search_rv : RecyclerView
+          - search_swipe : SwipeRefreshLayout
+          - searchcontent : EditText
+          # onCreate()
+          - getwant()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Setting {
+          - back : ImageView
+          - loginout : Button
+          # onCreate()
+          - initView()
+      }
+    }
+  }
+  
+
+  namespace zuke.com.qxapp {
+    namespace activity {
+      class zuke.com.qxapp.activity.Splash {
+          ~ timerTask : TimerTask
+          - sp_time : TextView
+          # onCreate()
+          - initView()
+      }
+    }
+  }
+  
+
+  zuke.com.qxapp.activity.Login -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyCollect -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyCommunity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyCommunity o-- zuke.com.qxapp.Adapter.MyCommunityAdapter : myCommunityAdapter
+  zuke.com.qxapp.activity.MyInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyPush -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.MyPush o-- zuke.com.qxapp.Adapter.MyPushAdapter : myPushAdapter
+  zuke.com.qxapp.activity.PushCommunity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.PushContent -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Receive -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.ReceiveCommunity -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Register -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Search -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Search o-- zuke.com.qxapp.Adapter.SearchAdapter : searchAdapter
+  zuke.com.qxapp.activity.Setting -up-|> androidx.appcompat.app.AppCompatActivity
+  zuke.com.qxapp.activity.Splash -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

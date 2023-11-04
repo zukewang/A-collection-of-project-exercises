@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/zhpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <zuke.com.qxapp.Util.ClearEditText
+                android:singleLine="true"
+                android:drawableRight="@drawable/delete"
+                android:maxLines="1"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入账号"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/pspic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"/>
+            <ImageView
+                android:id="@+id/lookps"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/eyeclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="#ec6f11" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_button"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"/>
+
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/registerBtn"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_button"
+        android:textColor="#fff"
+        android:text="注册账号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
